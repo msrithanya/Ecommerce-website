@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9E8FF;
+    width: 98%;
+}
+#inner_nav{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+#inner_nav p{
+    font-size: 1.2rem;
+    color: #2A110A;
+}
+.icons{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+.nav_image img{
+    width: 100%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}

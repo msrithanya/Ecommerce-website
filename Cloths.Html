@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cloths.css">
+</head>
+<body>
+    <nav>
+        <div class="nav_image"><img src="/photo/logo.png"></div>
+        <div id="inner_nav">
+           <a href="index.html"> <p>Home</p></a>
+            <a href="Cloths.Html"><p>cloths</p></a> 
+            <a href="Aboust.html"> <p>About Us</p></a>  
+            <a href="contact.html"><p>Contact</p></a>  
+        </div>
+        <div class="icons">
+            <img src="/photo/heart.png">
+            <img src="/photo/shopping-bag.png">
+            <img src="/photo/user-circle.png">
+        </div>
+    </nav>
+    <section class="cloth_view">
+       <div style="display: flex; flex-direction: column; align-items: center;width: 100%;">
+        <img src="/photo/Blue.png">
+        <div style="display: flex;margin-left: 5px; width: 25%;justify-content: center; justify-content: space-around;">
+            <img onclick="blue()" src="/photo/blue (1).png ">
+           <img   onclick="gray()" src="/photo/gray.png">
+            <img src="/photo/pink.png">
+            <img src="/photo/green.png">
+        </div>
+        <h1 style="margin-top: 20px;">Customize Cloth Pants </h1>
+        <div style="margin-top: 10px;" >Rs:10000 <del>Rs:20000</del></div>
+        <Button style="background-color:#2A110A ;color: white;padding: 10px 20px;margin-top: 10px;">Buy Now</Button>
+    </div>
+    </section>
+    <script>
+        function gray(){
+            document.getElementById('myimg').src="gray Dress.png";
+        }
+              
+    </script>
+</body>
+</html>

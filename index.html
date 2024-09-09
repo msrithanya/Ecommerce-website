@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <nav>
+        <div class="nav_image"><img src="/photo/logo.png" alt="Logo"></div>
+        <div id="inner_nav">
+            <p>Home</p>
+            <a href="Cloths.Html"><p>Cloths</p></a> 
+            <a href="Aboust.html"><p>About Us</p></a>  
+            <a href="contact.html"><p>Contact</p></a>  
+        </div>
+        <div class="icons">
+            <img src="/photo/heart.png" alt="Favorites">
+            <img src="/photo/shopping-bag.png" alt="Shopping Bag">
+            <img src="/photo/user-circle.png" alt="User Circle">
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="content">
+            <p id="tagline">Seamless Style, Tailored Just for You!</p>
+            <div style="margin-top: 3vh;">
+                <h1>Fashion Stitched to Perfection,</h1>
+                <h1>Delivered to Your Doorstep.</h1>
+            </div>
+            <p style="margin-top: 3vh; color: #4D4D4D;">
+                Shopping with us is not just about buying clothes; it's about embarking on a journey<br>
+                of self-discovery and empowerment. Our user-friendly website interface makes browsing<br>
+                assist you every step of the way.
+            </p>
+            <cta style="display: flex;">
+                <a href="Cloths.Html" id="button"><p>Try Now</p></a>
+                <a href="contact.html" id="button" style="margin-left: 15px; background-color: white; color: #2A110A;"><p>Contact Us</p></a>
+            </cta>
+        </div>
+        <div class="image">
+            <img src="photo/Group 39879.png" alt="Hero Image">
+        </div>
+    </section>
+    <section class="category">
+        <h1>Browse by Category</h1>
+        <div class="dress_image">
+            <a href="Cloths.Html"><img src="/photo/Suits.png" alt="Favorites"></a>
+            <a href="Cloths.Html"><img src="/photo/Kurthi.png" alt="Kurthi"></a>
+            <a href="Cloths.Html"><img src="/photo/Jeans.png" alt="Jeans"></a>
+        </div>
+    </section>
+    <section>
+        <header>
+            <p style="color: #86674A;">Product</p>
+            <h1 style="margin-top: 7px;">Our Top Selling Product</h1>
+            <p style="color: #4D4D4D; margin-top: 7px;">Where Style Meets Substance, Confidence Begins.</p>
+        </header>    
+        <div class="head_line">
+            <h1>Shop Dress</h1>
+            <div class="shoppingbasket">
+                <a href="addCart.html"><img src="/photo/shopping-bag.png" alt="Shopping Basket"></a>
+                <span id="quantity">0</span>
+            </div>
+        </div> 
+        <div class="products">
+            <div class="Kurthi" style="margin-left: 20px; position: relative;">
+                <img src="photo/Kurthi (1).png" alt="Kurthi">
+                <p class="Off">50% Off</p>
+            </div>
+            <div class="Shirt" style="margin-right: 20px; position: relative;">
+                <img src="/photo/Shirt.png" alt="Shirt">
+                <p class="Off">50% Off</p>
+            </div>
+        </div>
+        <div style="display: flex; width: 90%; margin-top: 5vh;">
+            <div style="margin-left: 30px;" class="dress_details">
+                <h1 id="kurt">Trending Kurthi</h1>
+                <p>Rs:500 <del>1500</del></p>
+                <button id="button" onclick="add()"><p>Add to Cart</p></button>
+            </div>
+            <div style="margin-right: 30px;" class="dress_detailss">
+                <h1>Trending T-shirt</h1>
+                <p>Rs:500 <del>1500</del></p>
+                <div id="button" onclick="add()"><p>Add to Cart</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="time">
+        <img src="/photo/GIRL.png" alt="Deal of the Week">
+        <div style="margin-left: 28%; margin-top: 5vh;">
+            <p style="font-size: 3vw; color: #F2DBBF;">Deal Of the Week</p>
+            <h1 style="color: #F2DBBF; margin-top: 2vh;">Unbeatable Savings, Limited Time Only!<br>Grab Yours Before It's Gone!</h1>
+            <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+            <a href="Cloths.Html" style="background-color: #F2DBBF; color: black; width: 30%; margin-top: 10vh;" id="button"><p>Try Now</p></a>
+        </div>
+    </section>
+    <header>
+        <p style="color: #86674A;">Product</p>
+        <h1 style="margin-top: 7px;">Shop by Categories</h1>
+        <p style="color: #4D4D4D; margin-top: 7px;">Our Products are Designed for Everyone.</p>
+    </header>  
+    <div style="display: flex; justify-content: center; margin-left: 8%; margin-top: 10vh;">
+        <div style="width: 40%;"><img src="/photo/jean girl.png" alt="Jean Girl"></div>
+        <div style="width: 50%; display: flex; flex-direction: column;">
+            <div style="height: 50%; display: flex;">
+                <img src="/photo/Shirtss.png" alt="Shirts">
+                <img src="/photo/suits (1).png" alt="Suits">
+            </div>
+            <div style="height: 50%;">
+                <img src="/photo/kurthis.png" alt="Kurthis">
+            </div>
+        </div>
+    </div>
+    <header>
+        <h1 style="margin-top: 7px;">Get in Touch</h1>
+        <p style="color: #4D4D4D; margin-top: 7px;">Transparent Value, Exceptional Affordability: Pricing that Fits Your Needs</p>
+    </header>
+    <div style="margin-top: 10vh;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <div style="display: flex; justify-content: space-between; width: 50%;">
+                <input style="padding: 20px 90px; background-color: #F2DBBF; border: none;" type="text" placeholder="Enter your name">
+                <input style="padding: 20px 90px; background-color: #F2DBBF; border: none;" type="email" placeholder="Enter your Email">
+            </div>
+        </div>
+        <center>
+            <div style="width: 50%;">
+                <textarea style="width: 100%; height: 30vh; background-color: #F2DBBF; border: none; margin-top: 3vh;" placeholder="Enter Your message"></textarea>
+            </div>
+        </center>
+        <center>
+            <div style="width: 50%;">
+                <button style="padding: 20px 100px; width: 100%; background-color: #2A110A; color: white; font-size: 1.5rem; margin-top: 3vh;">Submit</button>
+            </div>
+        </center>
+    </div>
+    <footer style="margin-top: 10vh; background-color: #2A110A; height: 40vh; color: white;">
+        <div style="position: relative; top: 5vh; margin-left: 5vh;">
+            <h1>Bombstart</h1>
+            <p style="margin-top: 10px;">Our vision is to provide convenience<br> and help increase your business.</p>
+            <h1 style="margin-top: 10px;">Manage all Your Plans from Your<br> mobile</h1>
+        </div>
+        <div style="border-top: 1px solid white; margin-top: 70px;">
+            <center><p style="color: white; margin-top: 25px;">Contact Us For More</p></center>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
